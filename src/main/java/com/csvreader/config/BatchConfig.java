@@ -63,9 +63,6 @@ public class BatchConfig {
         //Create reader instance
         FlatFileItemReader<Employee> reader = new FlatFileItemReader<>();
 
-        //Set data file location
-        reader.setResource(new FileSystemResource("files/data.csv"));
-
         //Set number of lines to skip (skip if it has headers)
         reader.setLinesToSkip(1);
 
