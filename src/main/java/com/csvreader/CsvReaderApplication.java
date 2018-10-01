@@ -24,6 +24,8 @@ public class CsvReaderApplication {
 		SpringApplication.run(CsvReaderApplication.class, args);
 	}
 
+	// second, min, hour, day of month, month, day of week
+	// / every *
 	@Scheduled(cron = "0 */1 * * * ?")
 	public void perform() throws Exception {
 		JobParameters parameters = new JobParametersBuilder()
